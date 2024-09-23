@@ -8,9 +8,56 @@ const config: Config = {
   ],
   theme: {
     extend: {
+  		fontFamily: {
+  			inter: ["var(--font-inter)"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+  			'dark-midnight': '#2c2c2c',
+        'west-orange': '#ffb30b',
+        'golden': '#ffd12e',
+        'sweet-orange': '#f5a329',
+        'royal-blue': '#293043'
+      },
+      keyframes: {
+        'grow-in': {
+          '0%': {
+            transform: 'scale(1.1)'
+          },
+          '100%': {
+            transform: 'scale(1)'
+          }
+        },
+        'slide-up': {
+          '0%': {
+            transform: 'scaleY(0)'
+          },
+          '60%': {
+            transform: 'scaleY(0)'
+          },
+          '100%': {
+            transform: 'scaleY(1)'
+          },
+        },
+        'slide-left': {
+          '0%': {
+            transform: 'translateX(100%)'
+          },
+          '60%': {
+            transform: 'translateX(100%)'
+          },
+          '100%': {
+            transform: 'translateX(0)'
+          },
+        }
+      },
+      animation: {
+        'grow-in': '0.5s grow-in ease-in-out',
+        'slide-up': '1.5s slide-up ease-in-out',
+        'slide-down': '1s slide-up ease-in-out',
+        'slide-left': '1.5s slide-left ease-in-out'
+      },
+  		boxShadow: {
+  			'land': '0px 5px 5px rgba(0, 0, 0, 0.1), 2px 5px 5px rgba(0, 0, 0, 0.1), 0px 5px 5px rgba(0, 0, 0, 0.1), 0px -1px 5px rgba(0,0,0, 0.1)'
       },
     },
   },
