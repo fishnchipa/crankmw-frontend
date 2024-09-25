@@ -23,6 +23,10 @@ const logos = [
   {
     src: "/Untitled_design_6_300x300.png",
     alt: "logo design"
+  },
+  {
+    src: "/Untitled_design_6_300x300.png",
+    alt: "logo design"
   }
 
 ]
@@ -32,7 +36,7 @@ export default function CarouselLogo() {
     <div className="h-fit w-full flex flex-row justify-center bg-gray-100">
       <Swiper
         spaceBetween={50}
-        slidesPerView={3}
+        slidesPerView={1}
         freeMode={true}
         loop={true}
         modules={[Autoplay]}
@@ -41,6 +45,20 @@ export default function CarouselLogo() {
         autoplay={{
           delay: 0,
         }}
+        breakpoints={
+          {
+            1280: {
+              slidesPerView: 4
+            },
+
+            640: {
+              slidesPerView: 3
+            },
+            400: {
+              slidesPerView: 2
+            }
+          }
+        }
       >
         {logos.map((item, key) => {
           return (

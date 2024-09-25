@@ -14,6 +14,7 @@ export default function Logo({ className }: LogoProps) {
         src="/logo.webp"
         alt="crank motor werkes logo"
         fill
+        className="object-cover"
       />
     </div>
   )

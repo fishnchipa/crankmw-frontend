@@ -28,7 +28,7 @@ const events = [
 export default function CarouselEvent() {
 
   return (
-    <Swiper className="event-swiper w-full h-[35vw] mt-10"
+    <Swiper className="event-swiper w-full h-[500px] mt-[200px]"
       modules={[Pagination, Autoplay]}
       slidesPerView={1}
       pagination={{ clickable: true }}

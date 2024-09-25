@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xsm': '370px',
+        'xmd': '738px'
+      },
   		fontFamily: {
   			inter: ["var(--font-inter)"],
       },

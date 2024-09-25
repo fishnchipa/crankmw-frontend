@@ -4,12 +4,17 @@ import { useState } from "react"
 const items = [
   "Home", "Products", "Tuning", "Contact"
 ]
-export default function MenuHamburger() {
+
+type MenuHamburgerProps = {
+  clear: boolean
+}
+
+export default function MenuHamburger({ clear }: MenuHamburgerProps) {
   const [active, setActive] = useState(false);
 
   return (
-    <>
-      <button onClick={() => setActive(true)}>
+    <div className={`${clear ? "text-white" : "text-dark-midnight"}`}>
+      <button onClick={() => setActive(true)} className="flex justify-center items-center">
         <Menu />
       </button>
       <div 
@@ -35,6 +40,6 @@ export default function MenuHamburger() {
           })}
         </div>
       </div>
-    </>
+    </div>
   )
 }

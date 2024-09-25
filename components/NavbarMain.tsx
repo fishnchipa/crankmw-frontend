@@ -14,12 +14,10 @@ type NavbarProps = {
 }
 
 export default function NavbarMain({ clear, className }: NavbarProps) {
-  
-
   return (
     <nav className={cn("flex items-center",className)}>
       <ul 
-        className={`hidden md:flex flex-row gap-x-10 font-semibold text-[1.1em] 
+        className={`hidden sm:flex flex-row gap-x-10 font-semibold text-[1.1em] 
         ${clear ? "text-white" : "text-dark-midnight"}` } 
       >
         {items.map((item, key) => {
@@ -36,8 +34,8 @@ export default function NavbarMain({ clear, className }: NavbarProps) {
           );
         })}
       </ul>
-      <div className="md:hidden">
-        <MenuHamburger />
+      <div className="sm:hidden h-full">
+        <MenuHamburger clear={clear}/>
       </div>
     </nav>
   )

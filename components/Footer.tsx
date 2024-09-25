@@ -2,7 +2,10 @@
 export default function Footer() {
   
   return (
-    <div className="w-full h-[500px] flex flex-row justify-between bg-royal-blue text-white px-[100px] py-10 mt-10">
+    <div 
+      className="w-full sm:h-[500px] flex flex-col sm:flex-row justify-between bg-royal-blue text-white 
+      px-5 sm:px-[80px] py-10 mt-10 gap-y-10"
+    >
       <div className="flex flex-col gap-y-5">
         <h1 className="text-[20px] text-west-orange">GET IN TOUCH</h1>
         <h2>Crank Motor Werkes</h2>

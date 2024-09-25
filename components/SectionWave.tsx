@@ -4,16 +4,21 @@ import Image from "next/image";
 
 export default function SectionWave() {
   return (
-    <div className="w-full h-[40vw] relative">
+    <div className="w-full h-[700px] relative flex justify-center -mt-[100px]">
       <Image 
         src="/wave.svg"
         alt="wave"
         fill
-        className="object-contain"
+        className="object-cover"
       />
-
-      <div className="flex flex-row items-center justify-between px-[300px] gap-x-[100px] pt-[80px] z-10">
-        <div className="relative w-[30vw] h-[45vw]">
+      <div 
+        className="w-[1280px] flex flex-col-reverse sm:flex-row items-center sm:justify-between
+        sm:pt-[80px] z-10 gap-y-10"
+      >
+        <div 
+          className="relative w-1/2 h-[40%] sm:w-full sm:h-[500px] lg:w-[500px] 
+          lg:h-[750px] 2xl:w-[650px] 2xl:h-[800px] sm:mt-[150px]"
+        >
           <Image 
             src="/computer.png"
             alt="computer"
@@ -22,7 +27,7 @@ export default function SectionWave() {
           />
         </div>
         <motion.div
-          className="z-10 w-[500px]"
+          className="z-10 sm:mt-[200px] sm:w-[500px]"
           initial={{ y: "100%", opacity: 0}}
           whileInView={{
             y: 0,
@@ -36,9 +41,9 @@ export default function SectionWave() {
           }}
           viewport={{ once: true }}
         >
-          <section className="z-10 w-[500px]">
-            <h2 className="text-[2em] font-bold">Real Time Power Efficiency</h2>
-            <p className="font-light">Accurate measurements of all things include within the pack of the system. The whole system comes with the included bonus of fast car and overall good experience.</p>
+          <section className="z-10 px-5">
+            <h2 className="font-bold text-[1.2em] sm:text-[2em]">Real Time Power Efficiency</h2>
+            <p className="font-light text-[0.8em] sm:text-[1em]">Accurate measurements of all things include within the pack of the system. The whole system comes with the included bonus of fast car and overall good experience.</p>
           </section>
         </motion.div>
       </div>

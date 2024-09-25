@@ -56,14 +56,31 @@ export default function CarouselMedia() {
     <div className="w-full px-[15vw] py-[1vw]">
       <Swiper
         modules={[Autoplay]}
-        slidesPerView={4}
-        className="event-swiper w-full h-[15vw] bg-gray-200 drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)]"
+        slidesPerView={1}
         speed={2500}
         freeMode={true}
         loop
         autoplay={{
           delay:0 
         }}
+        breakpoints={
+          {
+            1536: {
+              slidesPerView: 4
+            },
+            1280: {
+              slidesPerView: 3
+            },
+            640: {
+              slidesPerView: 2
+            },
+            400: {
+              slidesPerView: 1
+            }
+          }
+        }
+        className="event-swiper w-full h-[200px] lg:h-[250px] 2xl:h-[292px] 
+        bg-gray-200 drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)]"
       >
         {media.map((post, key) => {
           return (

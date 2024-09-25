@@ -15,22 +15,16 @@ export default function Home() {
 
   return (
     <>
-      <div className="h-[3000px]">
-        <Banner content="Alexandria Shop Open"/> 
-        <Header />
-        <div className="flex flex-col gap-y-[100px]">
-          <VideoMain />
-          <CarouselLogo />
-          <SectionWave />
-          <SectionFeature />
-          <CarouselEvent />
-          <SectionTuning />
-          <hr />
-          <MediaInstagram />
-        </div>
-
-        <Footer />
-      </div>
+      <Banner content="Alexandria Shop Open"/> 
+      <Header />
+      <VideoMain />
+      <CarouselLogo />
+      <SectionFeature />
+      <SectionWave />
+      <SectionTuning />
+      <CarouselEvent />
+      <MediaInstagram />
+      <Footer />
     </>
   );
 }
