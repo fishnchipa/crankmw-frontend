@@ -8,7 +8,6 @@ import MediaInstagram from "@/components/MediaInstagram";
 import SectionFeature from "@/components/SectionFeature";
 import SectionTuning from "@/components/SectionTuning";
 import SectionWave from "@/components/SectionWave";
-import VideoMain from "@/components/VideoMain";
 
 export default function Home() {
 
@@ -17,7 +16,6 @@ export default function Home() {
     <>
       <Banner content="Alexandria Shop Open"/> 
       <Header />
-      <VideoMain />
       <CarouselLogo />
       <SectionFeature />
       <SectionWave />

@@ -7,9 +7,6 @@ import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 import '@/styles/event-carousel.css'
 
-
-
-
 const events = [
   {
     src: "/mclaren.webp",
